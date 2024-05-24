@@ -12,19 +12,13 @@ import { SelectorType } from "@/types/typesdata";
    
    const session = useSession()
 
-  dispatch(login({username : session.data?.user?.name , email : session.data?.user?.email}))
-   
-   const selector = useSelector((state : SelectorType) => state.MyUserSlice)
-
-   console.log(selector);
-   
-   async function LogOutHandel(){
-    dispatch(logout())
-   }
-
    const router = useRouter()
-       
-   useEffect(() => {
+   
+   dispatch(login({username : session.data?.user?.name , email : session.data?.user?.email}))
+    
+    const selector = useSelector((state : SelectorType) => state.MyUserSlice)
+        
+     useEffect(() => {
     if (selector.username === "" && selector.email === "") {
       router.push("/auth/register");
     }
@@ -35,16 +29,7 @@ import { SelectorType } from "@/types/typesdata";
       <Head>
         <title>فروشگاه اینترنتی شاواز | خرید لوازم آرایشی ، بهداشتی ، عطر | فروشگاه شاواز</title>
       </Head>
-      <h1>HomePage</h1>
-      {
-        selector && (
-          <>
-              <h1>{selector.username}</h1>
-              <h1>{selector.email}</h1>
-              <button onClick={LogOutHandel}>LogOut</button>
-          </>
-        )
-      }
+      <h1 className="text-semibold font-sans text-2xl text-zinc-700 m-20">HomePage</h1>
       </>
     )
 

@@ -10,6 +10,8 @@
     "Database": "npx json-server --watch db.json -p 4000 --watch"
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.3",
+    "@heroicons/react": "^2.1.3",
     "@hookform/resolvers": "^3.4.2",
     "@reduxjs/toolkit": "^2.2.5",
     "json-server": "^1.0.0-beta.0",
