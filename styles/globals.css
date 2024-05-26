@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-    @font-face {
-      font-family: 'EnFont';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url(/font/couture-bld.otf) format('otf');
-    }
+@font-face {
+  font-family: 'EnFont';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/font/couture-bld.otf) format('otf');
+}
 body {
-  @apply font-body
+@apply font-body
 }

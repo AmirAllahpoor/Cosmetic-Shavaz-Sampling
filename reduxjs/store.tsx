@@ -9,18 +9,21 @@ const userSlice = createSlice({
     initialState : {
         username : "",
         email : "",
+        avatar : "",
     },
     reducers : {
         login : (state,action) => {
-            if (action.payload && action.payload.username && action.payload.email) {
+            if (action.payload && action.payload.username && action.payload.email && action.payload.avatar) {
             state.username = action.payload.username
             state.email = action.payload.email
+            state.avatar = action.payload.avatar
             }
         },
         logout : (state) => {
             signOut()
             state.username = ''
             state.email = ''
+            state.avatar = ''
         }
     }
 })

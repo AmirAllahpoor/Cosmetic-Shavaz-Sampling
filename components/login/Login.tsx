@@ -49,7 +49,7 @@ const LoginComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo , te
         const mydata = await res.json()
         
         if(mydata.length !== 0){
-            dispatch(login({username : mydata[0].UserName , email : mydata[0].Email }))
+            dispatch(login({username : mydata[0].UserName , email : mydata[0].Email , avatar : "https://images.macrumors.com/t/n4CqVR2eujJL-GkUPhv1oao_PmI=/1600x/article-new/2019/04/guest-user-250x250.jpg" }))
             Router.replace("/")
         }else {
             SetErrorLogin("Email And Password Not Vailed")

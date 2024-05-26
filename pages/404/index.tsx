@@ -1,11 +1,12 @@
 import Image from "next/image";
-import NotFoundImage from "@/public/imgNotFound.png"
 import Head from "next/head";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { SelectorType } from "@/types/typesdata";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import NotFoundImage from "@/public/imgNotFound.png"
+
 
 const NotFoundPage = () => {
 

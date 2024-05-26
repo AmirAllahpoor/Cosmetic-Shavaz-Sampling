@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useDispatch, useSelector } from "react-redux";
-import { login, logout } from "@/reduxjs/store";
+import { login } from "@/reduxjs/store";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSession } from "next-auth/react";
@@ -14,7 +14,7 @@ import { SelectorType } from "@/types/typesdata";
 
    const router = useRouter()
    
-   dispatch(login({username : session.data?.user?.name , email : session.data?.user?.email}))
+   dispatch(login({username : session.data?.user?.name , email : session.data?.user?.email , avatar : session.data?.user?.image}))
     
     const selector = useSelector((state : SelectorType) => state.MyUserSlice)
         

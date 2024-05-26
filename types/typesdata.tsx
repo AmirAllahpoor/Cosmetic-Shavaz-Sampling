@@ -28,9 +28,18 @@ export type UserDataType = {
     MyUserSlice : {
       email : string
       username : string
+      avatar : string
     }
     _persist : {
       rehydrated : boolean
       version : number
     }
+  }
+
+  export type CricleType = {
+   color : string 
+    top : string 
+    left : string
+    right : string
+    bottom : string
   }

@@ -17,6 +17,7 @@ import * as yup from "yup"
 import {yupResolver} from "@hookform/resolvers/yup"
 import { useRouter } from "next/router";
 
+
 const RegisterComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo , textlast}) : JSX.Element => {
 
     const Router = useRouter()
@@ -40,7 +41,7 @@ const RegisterComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo ,
     const SubmitForm = async (data : UserType) => {
         const res = await fetch("http://localhost:4000/UserDB" , {
             method : "POST",
-            body : JSON.stringify({ id: Date.now() , UserName : data.UserName , Email : data.Email , Password : data.Password}),
+            body : JSON.stringify({ id: Date.now() , UserName : data.UserName , Email : data.Email , Password : data.Password , Avatar : "https://images.macrumors.com/t/n4CqVR2eujJL-GkUPhv1oao_PmI=/1600x/article-new/2019/04/guest-user-250x250.jpg"}),
             headers : {
                 "Content-Type" : "application/json",
             },
