@@ -39,9 +39,12 @@ const RegisterComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo ,
     }
 
     const SubmitForm = async (data : UserType) => {
+        const lengthdata = await fetch("http://localhost:4000/UserDB")
+        const datafetch2 = await lengthdata.json()
+
         const res = await fetch("http://localhost:4000/UserDB" , {
             method : "POST",
-            body : JSON.stringify({ id: Date.now() , UserName : data.UserName , Email : data.Email , Password : data.Password , Avatar : "https://images.macrumors.com/t/n4CqVR2eujJL-GkUPhv1oao_PmI=/1600x/article-new/2019/04/guest-user-250x250.jpg"}),
+            body : JSON.stringify({ id: datafetch2.length + 2 , UserName : data.UserName , Email : data.Email , Password : data.Password , Avatar : "https://images.macrumors.com/t/n4CqVR2eujJL-GkUPhv1oao_PmI=/1600x/article-new/2019/04/guest-user-250x250.jpg"}),
             headers : {
                 "Content-Type" : "application/json",
             },

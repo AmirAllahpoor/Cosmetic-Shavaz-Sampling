@@ -38,7 +38,7 @@ import {
       }
   
     return (
-      <Disclosure as="nav" className="bg-zinc-100">
+      <Disclosure as="nav" className="bg-zinc-000 shadow-sm shadow-[#3939393c]">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -99,7 +99,7 @@ import {
                       <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none ">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
-                        <img
+                        <Image
                           className="h-8 w-8 rounded-full"
                           src={selector.avatar}
                           width={100}
@@ -124,16 +124,6 @@ import {
                               className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                               Your Profile
-                            </Link>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <Link
-                              href="/setting"
-                              className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                            >
-                              Settings
                             </Link>
                           )}
                         </MenuItem>

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import Head from "next/head";
+import Image from "next/image";
 
 const ProfilePage = () => {
 
@@ -14,7 +15,7 @@ const ProfilePage = () => {
         if (selector.username === "" && selector.email === "") {
           router.push("/auth/register");
         }
-      }, [selector]);
+      }, [router , selector.username , selector.email]);
 
     return ( 
         <>
@@ -29,7 +30,7 @@ const ProfilePage = () => {
                 <div className="flex flex-row justify-center rounded-2xl bg-[#ffffff35] backdrop-blur-lg md:w-96 w-80 h-[27rem] border-[1px] border-zinc-300 z-50">
                 <div className="flex flex-col justify-center text-center">
                     <div className="w-40 ml-12">
-                        <img className="rounded-3xl " src={selector.avatar} width={100} height={100} alt="" />
+                        <Image className="rounded-3xl " src={selector.avatar} width={100} height={100} alt="" />
                     </div>
                     <h1 className="text-zinc-800 text-3xl font-semibold mt-5 "> {selector.username} </h1>
                     <h1 className="text-zinc-800 text-base mt-2"> {selector.email} </h1>

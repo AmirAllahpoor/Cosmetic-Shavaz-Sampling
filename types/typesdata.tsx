@@ -27,6 +27,8 @@ export type UserDataType = {
   export type SelectorType = {
     MyUserSlice : {
       email : string
+      password : string
+      id : string
       username : string
       avatar : string
     }
@@ -34,12 +36,4 @@ export type UserDataType = {
       rehydrated : boolean
       version : number
     }
-  }
-
-  export type CricleType = {
-   color : string 
-    top : string 
-    left : string
-    right : string
-    bottom : string
   }

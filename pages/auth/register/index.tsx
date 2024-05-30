@@ -15,7 +15,7 @@ const RegisterPage = () => {
     if (selector.username !== "" && selector.email !== "") {
       router.push("/");
     }
-  }, [selector]);
+  }, [router , selector.username , selector.email]);
     
     return ( 
         <>

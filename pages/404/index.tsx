@@ -18,7 +18,7 @@ const NotFoundPage = () => {
         if (selector.username === "" && selector.email === "") {
           router.push("/auth/register");
         }
-      }, [selector]);
+      }, [router , selector.username , selector.email]);
 
     return ( 
         <>

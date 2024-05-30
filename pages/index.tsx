@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { SelectorType } from "@/types/typesdata";
+import SliderBanner from "@/components/SliderBanner/SliderBanner";
+import ProductCategorization from "@/components/ProductCategorization/ProductCategorization";
 
  const Home = () => {
    
@@ -22,14 +24,15 @@ import { SelectorType } from "@/types/typesdata";
     if (selector.username === "" && selector.email === "") {
       router.push("/auth/register");
     }
-  }, [selector]);
+  }, [router , selector.username , selector.email]);
    
     return (
       <>
       <Head>
         <title>فروشگاه اینترنتی شاواز | خرید لوازم آرایشی ، بهداشتی ، عطر | فروشگاه شاواز</title>
       </Head>
-      <h1 className="text-semibold font-sans text-2xl text-zinc-700 m-20">HomePage</h1>
+        <SliderBanner />
+        <ProductCategorization />
       </>
     )
 
