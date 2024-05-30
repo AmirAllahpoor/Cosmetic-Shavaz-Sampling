@@ -55,13 +55,13 @@ const ProductCategorization = () => {
 
     return ( 
         <div className="w-full h-full py-10 md:px-10 px-2 relative md:mt-10 mt-0 ">
-            <div className="w-full flex flex-wrap gap-14 mt-10 justify-center ">
+            <div className="w-full flex flex-wrap gap-14 mt-10 pb-10 justify-center">
              {
                 ListCategory && (
                     ListCategory.map((category , index) => {
                         return (
                             <>
-                                <div key={index} className="md:w-20 lg:w-24 w-[4rem] hover:w-[5rem] lg:hover:w-36 transition-all duration-[0.5s] text-center cursor-pointer">
+                                <div key={index} className="md:w-20 lg:w-24 w-[4rem] hover:w-[5rem] lg:hover:w-28 md:hover:w-24 transition-all duration-[0.5s] text-center cursor-pointer">
                                     <Image className="w-full" src={category.image} alt="" width={100} height={100} layout="responsive"/>
                                     <h5 className="lg:text-sm text-[10px] text-zinc-600 mt-5">{category.title}</h5>
                                 </div>

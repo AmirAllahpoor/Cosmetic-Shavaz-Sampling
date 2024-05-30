@@ -7,6 +7,7 @@ import { useSession } from "next-auth/react";
 import { SelectorType } from "@/types/typesdata";
 import SliderBanner from "@/components/SliderBanner/SliderBanner";
 import ProductCategorization from "@/components/ProductCategorization/ProductCategorization";
+import PromotionalBanner from "@/components/PromotionalBanner/PromotionalBanner";
 
  const Home = () => {
    
@@ -33,6 +34,7 @@ import ProductCategorization from "@/components/ProductCategorization/ProductCat
       </Head>
         <SliderBanner />
         <ProductCategorization />
+        <PromotionalBanner />
       </>
     )
 
