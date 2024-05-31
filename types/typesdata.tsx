@@ -37,3 +37,23 @@ export type UserDataType = {
       version : number
     }
   }
+
+  export type ProductType = {
+      id : string
+      image : string
+      title : string
+      price : string
+      category : string
+    }
+
+  export type HomePageProps = {
+    SunScreenData : ProductType[]
+    MoisturizingData : ProductType[]
+    WashingGelData : ProductType[]
+    ShampooData : ProductType[]
+  }
+  
+  export type SuggestionCPProps = {
+    DataProduct : ProductType[]
+    BgColor : string
+  }

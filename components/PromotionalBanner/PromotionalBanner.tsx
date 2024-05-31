@@ -6,10 +6,10 @@ const PromotionalBanner = () => {
     return ( 
         <div className="flex md:flex-row flex-col justify-center overflow-hidden md:gap-10 gap-5">
             <div className="md:w-5/12 w-full md:px-0 ">
-                <Image src={PromotionalImg1} className="md:rounded-2xl" alt="" layout="responsive" />
+                <Image src={PromotionalImg1} className="md:rounded-2xl cursor-pointer" alt="" layout="responsive" />
             </div>
             <div className="md:w-5/12 w-full md:px-0 ">
-                <Image src={PromotionalImg2} className="md:rounded-2xl" alt="" layout="responsive" />
+                <Image src={PromotionalImg2} className="md:rounded-2xl cursor-pointer" alt="" layout="responsive" />
             </div>
         </div>
      );

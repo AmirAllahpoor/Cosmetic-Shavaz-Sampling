@@ -42,5 +42,175 @@
       "Password": "shateri1386",
       "Avatar": "https://images.macrumors.com/t/n4CqVR2eujJL-GkUPhv1oao_PmI=/1600x/article-new/2019/04/guest-user-250x250.jpg"
     }
+  ],
+  "Products" : [
+    {
+      "id" : "1",
+      "image" : "/SunScreen3.png",
+      "title" : "Izadin SPF 50 sunscreen  capacity 50 ml",
+      "price" : "999,000",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "2",
+      "image" : "/SunScreen5.png",
+      "title" : "Hydroderm SPF30 sunscreen 50 ml capacity",
+      "price" : "135,300",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "3",
+      "image" : "/SunScreen4.png",
+      "title" : "Jute sunscreen SPF50, capacity 40 ml",
+      "price" : "252,000",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "4",
+      "image" : "/SunScreen6.png",
+      "title" : "Arden men's sunscreen SPF50, 50 ml capacity",
+      "price" : "142,750",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "5",
+      "image" : "/SunScreen2.png",
+      "title" : "Pixel sunscreen SPF 50, capacity 50 ml",
+      "price" : "224,000",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "6",
+      "image" : "/SunScreen.png",
+      "title" : "Lafarre sunscreen SPF 50 , capacity 40 ml",
+      "price" : "302,000",
+      "category" : "SunScreen"
+    },
+    {
+      "id" : "7",
+      "image" : "/HydratingPhoto5.png",
+      "title" : "Hydroderm hydrating face mask, 100 grams",
+      "price" : "246,000",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "8",
+      "image" : "/HydratingPhoto2.png",
+      "title" : "Kaman moisturizing cream, capacity 500 ml",
+      "price" : "153,000",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "9",
+      "image" : "/HydratingPhoto3.png",
+      "title" : "Lafarre moisturizing cream , capacity 75 ml",
+      "price" : "247,000",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "10",
+      "image" : "/HydratingPhoto4.png",
+      "title" : "Omega 3 moisturizing cream, capacity 500 ml",
+      "price" : "183,175",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "11",
+      "image" : "/HydratingPhoto1.png",
+      "title" : "Simple moisturizing cream capacity 125 ml",
+      "price" : "414,170",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "12",
+      "image" : "/HydratingPhoto6.png",
+      "title" : "Arden moisturizing cream SPF20, capacity 40 ml",
+      "price" : "116,250",
+      "category" : "Moisturizing"
+    },
+    {
+      "id" : "13",
+      "image" : "/WashingGelPhoto5.png",
+      "title" : "Deep Sense face wash gel, capacity 250 ml",
+      "price" : "62,300",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "14",
+      "image" : "/WashingGelPhoto2.png",
+      "title" : "Butanis face wash gel capacity 150 ml",
+      "price" : "93,000",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "15",
+      "image" : "/WashingGelPhoto3.png",
+      "title" : "Dilmon face wash gel, capacity 150 ml",
+      "price" : "76,260",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "16",
+      "image" : "/WashingGelPhoto4.png",
+      "title" : "Sinera face wash gel, capacity 200 ml",
+      "price" : "72,000",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "17",
+      "image" : "/WashingGelPhoto1.png",
+      "title" : "Arden face wash gel for men, capacity 150 ml",
+      "price" : "109,000",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "18",
+      "image" : "/WashingGelPhoto6.png",
+      "title" : "Simple face wash gel, capacity 150 ml",
+      "price" : "327,850",
+      "category" : "WashingGel"
+    },
+    {
+      "id" : "19",
+      "image" : "/ShampooPhoto4.png",
+      "title" : "Baby First baby hair shampoo, 250 grams",
+      "price" : "97,580",
+      "category" : "Shampoo"
+    },
+    {
+      "id" : "20",
+      "image" : "/ShampooPhoto2.png",
+      "title" : "Botanis daily hair shampoo, capacity 300 ml",
+      "price" : "72,495",
+      "category" : "Shampoo"
+    },
+    {
+      "id" : "21",
+      "image" : "/ShampooPhoto3.png",
+      "title" : "Arden baby hair shampoo, capacity 200 ml",
+      "price" : "39,990",
+      "category" : "Shampoo"
+    },
+    {
+      "id" : "22",
+      "image" : "/ShampooPhoto1.png",
+      "title" : "Amophilia hair shampoo and anti-hair loss tonic",
+      "price" : "626,500",
+      "category" : "Shampoo"
+    },
+    {
+      "id" : "23",
+      "image" : "/ShampooPhoto5.png",
+      "title" : "Leroux men's hair shampoo , 300 grams",
+      "price" : "49,000",
+      "category" : "Shampoo"
+    },
+    {
+      "id" : "24",
+      "image" : "/ShampooPhoto6.png",
+      "title" : "Serita Beauty color shampoo, capacity 200 ml",
+      "price" : "245,650",
+      "category" : "Shampoo"
+    }
   ]
 }
