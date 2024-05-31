@@ -57,3 +57,10 @@ export type UserDataType = {
     DataProduct : ProductType[]
     BgColor : string
   }
+
+  export type ProductSupriseProps = {
+    image : string
+    PrimaryPrice : string
+    SecondaryPrice : string
+    Offer : string
+  }

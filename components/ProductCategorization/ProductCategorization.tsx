@@ -54,7 +54,7 @@ export const ListCategory = [
 const ProductCategorization = () => {
 
     return ( 
-        <div className="w-full h-full py-10 md:px-10 px-2 relative md:mt-10 mt-0 ">
+        <div className="w-full h-full py-10 md:px-10 px-2 relative md:mt-5 mt-0 ">
             <div className="w-full flex flex-wrap gap-14 mt-10 pb-10 justify-center">
              {
                 ListCategory && (
