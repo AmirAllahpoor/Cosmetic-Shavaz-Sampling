@@ -13,6 +13,7 @@ import BrandBanner from "@/components/BrandBanner/BrandBanner";
 import SliderSuprise from "@/components/SliderSuprise/SlideSuprise";
 import ProductSuprise from "@/components/ProductSuperise/ProductSuprise";
 import Bsproduct from "@/components/B-S-Product/B-S-Product";
+import BrandBanner2 from "@/components/BrandBanner2/BrandBanner2";
 
  const Home : React.FC<HomePageProps> = ({SunScreenData , MoisturizingData , WashingGelData , ShampooData}) => {
 
@@ -52,11 +53,11 @@ import Bsproduct from "@/components/B-S-Product/B-S-Product";
         <BrandBanner image1="/BrandBanner1.jpg" image2="/BrandBanner2.jpg" image3="/BrandBanner3.jpg" image4="/BrandBanner4.jpg"/>
         <div className="w-full flex flex-row justify-center mt-5">
           <div className="w-11/12 px-7">
-            <h1 className="text-2xl font-semibold text-zinc-500">Best-Selling Products</h1>
+            <h1 className="md:text-2xl text-xl font-semibold text-zinc-500">Best-Selling Products</h1>
           </div>
         </div>
         <div className="w-full flex flex-row justify-center mt-5">
-          <div className="md:w-11/12 w-full md:px-7 px-5 flex flex-wrap justify-between">
+          <div className="md:w-11/12 w-full md:px-7 px-2 flex flex-wrap justify-between">
             <Bsproduct title="My sunscreen fluid, capacity 50 ml" image="/B-S-PhotoProduct1.jpg" PrimaryPrice="265,000" SecondaryPrice="232,200" Offer="12"/>
             <Bsproduct title="Toner Vitalier Activit model, capacity 200 ml" image="/B-S-PhotoProduct2.jpg" PrimaryPrice="143,500" SecondaryPrice="86,100" Offer="40"/>
             <Bsproduct title="Kozarex skin serum, capacity 100 ml" image="/B-S-PhotoProduct3.jpg" PrimaryPrice="1,300,000" SecondaryPrice="899,000" Offer="31"/>
@@ -66,6 +67,7 @@ import Bsproduct from "@/components/B-S-Product/B-S-Product";
           </div>
         </div>
         <BrandBanner image1="/BrandBanner5.jpg" image2="/BrandBanner6.jpg" image3="/BrandBanner7.jpg" image4="/BrandBanner8.jpg"/>
+        <BrandBanner2 />
       </>
     )
 
