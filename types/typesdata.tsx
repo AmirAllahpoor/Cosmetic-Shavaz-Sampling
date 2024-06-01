@@ -68,3 +68,10 @@ export type UserDataType = {
   export type BSProductProps = ProductSupriseProps & {
     title : string
   }
+
+  export type BrandBannerProps = {
+    image1 : string
+    image2 : string
+    image3 : string
+    image4 : string
+  }

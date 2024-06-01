@@ -49,7 +49,7 @@ import Bsproduct from "@/components/B-S-Product/B-S-Product";
             <SuggestionCard DataProduct={ShampooData} BgColor="bg-orange-500"/>
           </div>
         </div>
-        <BrandBanner />
+        <BrandBanner image1="/BrandBanner1.jpg" image2="/BrandBanner2.jpg" image3="/BrandBanner3.jpg" image4="/BrandBanner4.jpg"/>
         <div className="w-full flex flex-row justify-center mt-5">
           <div className="w-11/12 px-7">
             <h1 className="text-2xl font-semibold text-zinc-500">Best-Selling Products</h1>
@@ -65,6 +65,7 @@ import Bsproduct from "@/components/B-S-Product/B-S-Product";
             <Bsproduct title="Colorless code Flormar make-up fixing powder" image="/B-S-PhotoProduct6.jpg" PrimaryPrice="650,000" SecondaryPrice="487,500" Offer="25"/>
           </div>
         </div>
+        <BrandBanner image1="/BrandBanner5.jpg" image2="/BrandBanner6.jpg" image3="/BrandBanner7.jpg" image4="/BrandBanner8.jpg"/>
       </>
     )
 
