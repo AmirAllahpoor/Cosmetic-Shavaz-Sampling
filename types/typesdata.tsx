@@ -64,3 +64,7 @@ export type UserDataType = {
     SecondaryPrice : string
     Offer : string
   }
+  
+  export type BSProductProps = ProductSupriseProps & {
+    title : string
+  }

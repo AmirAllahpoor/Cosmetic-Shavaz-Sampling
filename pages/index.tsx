@@ -11,6 +11,8 @@ import PromotionalBanner from "@/components/PromotionalBanner/PromotionalBanner"
 import SuggestionCard from "@/components/SuggestionCard/SuggestionCard";
 import BrandBanner from "@/components/BrandBanner/BrandBanner";
 import SliderSuprise from "@/components/SliderSuprise/SlideSuprise";
+import ProductSuprise from "@/components/ProductSuperise/ProductSuprise";
+import Bsproduct from "@/components/B-S-Product/B-S-Product";
 
  const Home : React.FC<HomePageProps> = ({SunScreenData , MoisturizingData , WashingGelData , ShampooData}) => {
 
@@ -41,13 +43,28 @@ import SliderSuprise from "@/components/SliderSuprise/SlideSuprise";
         <PromotionalBanner />
         <div className="flex flex-row justify-center overflow-hidden">
           <div className="flex flex-wrap md:gap-14 gap-10 justify-center md:w-11/12 mt-5 py-10 w-full pr-5 lg:pr-0 md:pr-0 md:pl-0 pl-3">
-            <SuggestionCard DataProduct={SunScreenData} BgColor="bg-purple-500"/>
-            <SuggestionCard DataProduct={MoisturizingData} BgColor="bg-lime-400"/>
-            <SuggestionCard DataProduct={WashingGelData} BgColor="bg-pink-400"/>
-            <SuggestionCard DataProduct={ShampooData} BgColor="bg-orange-400"/>
+            <SuggestionCard DataProduct={SunScreenData} BgColor="bg-purple-600"/>
+            <SuggestionCard DataProduct={MoisturizingData} BgColor="bg-lime-500"/>
+            <SuggestionCard DataProduct={WashingGelData} BgColor="bg-pink-500"/>
+            <SuggestionCard DataProduct={ShampooData} BgColor="bg-orange-500"/>
           </div>
         </div>
         <BrandBanner />
+        <div className="w-full flex flex-row justify-center mt-5">
+          <div className="w-11/12 px-7">
+            <h1 className="text-2xl font-semibold text-zinc-500">Best-Selling Products</h1>
+          </div>
+        </div>
+        <div className="w-full flex flex-row justify-center mt-5">
+          <div className="md:w-11/12 w-full md:px-7 px-5 flex flex-wrap justify-between">
+            <Bsproduct title="My sunscreen fluid, capacity 50 ml" image="/B-S-PhotoProduct1.jpg" PrimaryPrice="265,000" SecondaryPrice="232,200" Offer="12"/>
+            <Bsproduct title="Toner Vitalier Activit model, capacity 200 ml" image="/B-S-PhotoProduct2.jpg" PrimaryPrice="143,500" SecondaryPrice="86,100" Offer="40"/>
+            <Bsproduct title="Kozarex skin serum, capacity 100 ml" image="/B-S-PhotoProduct3.jpg" PrimaryPrice="1,300,000" SecondaryPrice="899,000" Offer="31"/>
+            <Bsproduct title="Prime sunscreen fluid with a capacity of 40 ml" image="/B-S-PhotoProduct4.jpg" PrimaryPrice="517,000" SecondaryPrice="361,900" Offer="30"/>
+            <Bsproduct title="Serita eyelash strengthening solution, capacity 8 ml" image="/B-S-PhotoProduct5.jpg" PrimaryPrice="689,000" SecondaryPrice="585,650" Offer="15"/>
+            <Bsproduct title="Colorless code Flormar make-up fixing powder" image="/B-S-PhotoProduct6.jpg" PrimaryPrice="650,000" SecondaryPrice="487,500" Offer="25"/>
+          </div>
+        </div>
       </>
     )
 
