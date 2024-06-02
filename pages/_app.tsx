@@ -6,6 +6,8 @@ import {store} from "@/reduxjs/store"
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 import MyNavbar from "@/components/Navbar/Navbar";
+import FooterSite from "@/components/Footer/FooterSite";
+
 
 export default function App({ Component, pageProps } : AppProps) {
 
@@ -17,6 +19,7 @@ export default function App({ Component, pageProps } : AppProps) {
         <PersistGate persistor={persistor}>
           <MyNavbar />
           <Component {...pageProps} />;
+          <FooterSite />
         </PersistGate>
       </Provider>
     </SessionProvider>

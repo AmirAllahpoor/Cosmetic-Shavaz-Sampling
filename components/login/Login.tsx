@@ -4,7 +4,6 @@ import { FcGoogle } from "react-icons/fc";
 import LogoType from "@/public/shavazlogotype.png"
 import BgRegis from "@/public/imgaccount.png"
 import {signIn} from "next-auth/react"
-import { NextPage } from "next";
 import { RegisProps, UserType2 } from "@/types/typesdata";
 import { IoEye } from "react-icons/io5";
 import { IoMdEyeOff } from "react-icons/io";
@@ -17,6 +16,7 @@ import {yupResolver} from "@hookform/resolvers/yup"
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 import { login } from "@/reduxjs/store";
+import { NextPage } from "next";
 
 const LoginComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo , textlast}) : JSX.Element => {
 
@@ -115,3 +115,4 @@ const LoginComponent : NextPage<RegisProps> = ({headtext , textbtn , pathgo , te
 }
  
 export default LoginComponent;
+
