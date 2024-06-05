@@ -25,22 +25,25 @@ const NotFoundPage = () => {
         <Head>
             <title>404 : Not Founded !</title>
         </Head>
-        <div className="flex flex-row justify-center">
-            <div className="flex flex-col md:mt-28 mt-32">
-                <div className="md:w-[45rem] w-auto">
-                    <Image src={NotFoundImage} className=" hue-rotate-[-50deg]" width={100} height={100} alt="" layout="responsive"/>    
-                </div>
-                <div className="text-center px-4 md:px-0">
-                    <h1 className="md:text-xl text-base md:mt-0 mt-4 text-zinc-700 font-semibold">Oops, sorry, we could not find the page you are looking for</h1>
-                    <h1 className="md:text-base text-sm md:mt-2 mt-4 text-zinc-700">Do you want to go to the main page, press the bottom button</h1>
-                    <Link href="/">
-                    <button type="button" className="
-                    bg-indigo-700 md:mt-4 mt-6 text-white  md:w-1/4 w-40  h-10 rounded-xl hover:bg-white hover:text-indigo-700 
-                    hover:border-2 hover:border-indigo-700
-                    ">Go To Home !</button>
-                    </Link>
-                </div>
-            </div>
+        <div className="flex flex-col justify-center ">
+           <main className="grid min-h-full place-items-center bg-white px-6 mt-28 sm:py-32 lg:px-8">
+           <div className="text-center">
+             <p className="text-base font-semibold text-indigo-600">404</p>
+             <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
+             <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
+             <div className="mt-10 flex items-center justify-center gap-x-6">
+               <a
+                 href="#"
+                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+               >
+                 Go back home
+               </a>
+               <a href="#" className="text-sm font-semibold text-gray-900">
+                 Contact support <span aria-hidden="true">&rarr;</span>
+               </a>
+             </div>
+           </div>
+         </main>
         </div>
         </>
      );

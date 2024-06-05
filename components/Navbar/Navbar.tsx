@@ -14,21 +14,32 @@ import {
   import Link from 'next/link'
   import { useSelector } from 'react-redux'
   import { SelectorType } from '@/types/typesdata'
+import { useRouter } from 'next/router'
   
   function classNames(...classes : any[]) {
     return classes.filter(Boolean).join(' ')
   }
   
   export default function MyNavbar() {
+
+      const router = useRouter()      
     
       const selector = useSelector((state : SelectorType) => state.MyUserSlice)
   
       const navigation = [
-          { name: 'HomePage', href: '/', current: true },
+          { name: 'HomePage', href: '/', current: false },
           { name: 'Store', href: '/store', current: false },
           { name: 'Dashboard', href: '/dashboard', current: false },
           { name: `Hello ${selector.username !== "" ? selector.username : "Guest"} !`, href: '/', current: false },
         ]
+        
+        if(router.pathname == navigation[0].href){
+          navigation[0].current = true
+        }else if(router.pathname == navigation[1].href){
+          navigation[1].current = true
+        } else if(router.pathname == navigation[2].href){
+          navigation[2].current = true
+        }        
 
     return (
       <Disclosure as="nav" className="bg-zinc-000 shadow-sm shadow-[#3939393c]">
