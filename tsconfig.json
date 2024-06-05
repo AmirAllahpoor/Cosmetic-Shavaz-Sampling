@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "pages/_app.jsx", "pages/auth/register/index.ysx", "pages/api/auth/[...nextauth].jsx", "components/Register/Register.jsx", "components/info/info.jsx", "components/authentication/auth.jsx", "pages/auth/login/index.jsx", "pages/users/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "pages/_app.jsx" , "pages/auth/register/index.ysx", "pages/api/auth/[...nextauth].jsx", "components/Register/Register.jsx", "components/info/info.jsx", "components/authentication/auth.jsx", "pages/auth/login/index.jsx", "pages/users/index.jsx"],
   "exclude": ["node_modules"]
 }

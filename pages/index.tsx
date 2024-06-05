@@ -11,7 +11,6 @@ import PromotionalBanner from "@/components/PromotionalBanner/PromotionalBanner"
 import SuggestionCard from "@/components/SuggestionCard/SuggestionCard";
 import BrandBanner from "@/components/BrandBanner/BrandBanner";
 import SliderSuprise from "@/components/SliderSuprise/SlideSuprise";
-import ProductSuprise from "@/components/ProductSuperise/ProductSuprise";
 import Bsproduct from "@/components/B-S-Product/B-S-Product";
 import BrandBanner2 from "@/components/BrandBanner2/BrandBanner2";
 
@@ -23,7 +22,7 @@ import BrandBanner2 from "@/components/BrandBanner2/BrandBanner2";
 
    const router = useRouter()
    
-   dispatch(login({username : session.data?.user?.name , email : session.data?.user?.email , avatar : session.data?.user?.image}))
+   dispatch(login({id: "LoginGithub" ,username : session.data?.user?.name , password : "NoPass" , email : session.data?.user?.email , avatar : session.data?.user?.image}))
     
     const selector = useSelector((state : SelectorType) => state.MyUserSlice)
         

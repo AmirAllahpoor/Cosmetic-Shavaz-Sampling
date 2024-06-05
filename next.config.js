@@ -2,7 +2,7 @@
 
 const nextConfig = {
     images : {
-        domains : ["avatars.githubusercontent.com","images.macrumors.com" ]
+        domains : ["files.edgestore.dev","avatars.githubusercontent.com","images.macrumors.com" ]
     }
 }
 

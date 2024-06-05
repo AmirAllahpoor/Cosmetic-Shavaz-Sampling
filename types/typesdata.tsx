@@ -75,3 +75,15 @@ export type UserDataType = {
     image3 : string
     image4 : string
   }
+
+  export type DataUserType = {
+      email : string
+      password? : string
+      id? : string
+      username : string
+      avatar : string
+  }
+
+  export type ProfileProps = {
+    UserData : DataUserType
+  }

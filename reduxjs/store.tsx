@@ -7,21 +7,27 @@ import { signOut } from "next-auth/react"
 const userSlice = createSlice({
     name : "MyUserSlice" ,
     initialState : {
+        id : "",
         username : "",
+        password : "",
         email : "",
         avatar : "",
     },
     reducers : {
         login : (state,action) => {
-            if (action.payload && action.payload.username && action.payload.email && action.payload.avatar) {
+            if (action.payload && action.payload.username && action.payload.email && action.payload.avatar && action.payload.password && action.payload.id ) {
+            state.id = action.payload.id
             state.username = action.payload.username
+            state.password = action.payload.password
             state.email = action.payload.email
             state.avatar = action.payload.avatar
             }
         },
         logout : (state) => {
             signOut()
+            state.id = ''
             state.username = ''
+            state.password = ''
             state.email = ''
             state.avatar = ''
         }

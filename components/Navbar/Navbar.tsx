@@ -12,8 +12,7 @@ import {
   import ShavazLogo from "@/public/shavazlogotype.png"
   import Image from 'next/image'
   import Link from 'next/link'
-  import { useDispatch, useSelector } from 'react-redux'
-  import { logout } from '@/reduxjs/store'
+  import { useSelector } from 'react-redux'
   import { SelectorType } from '@/types/typesdata'
   
   function classNames(...classes : any[]) {
@@ -21,9 +20,7 @@ import {
   }
   
   export default function MyNavbar() {
-  
-      const dispatch = useDispatch()
-  
+    
       const selector = useSelector((state : SelectorType) => state.MyUserSlice)
   
       const navigation = [
@@ -32,11 +29,7 @@ import {
           { name: 'Dashboard', href: '/dashboard', current: false },
           { name: `Hello ${selector.username !== "" ? selector.username : "Guest"} !`, href: '/', current: false },
         ]
-  
-      async function SignOutHandel () {
-          dispatch(logout())
-      }
-  
+
     return (
       <Disclosure as="nav" className="bg-zinc-000 shadow-sm shadow-[#3939393c]">
         {({ open }) => (
@@ -124,17 +117,6 @@ import {
                               className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                               Your Profile
-                            </Link>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <Link
-                              href="/"
-                              className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                              onClick={SignOutHandel}
-                            >
-                              Sign out
                             </Link>
                           )}
                         </MenuItem>

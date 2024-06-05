@@ -7,13 +7,14 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 import MyNavbar from "@/components/Navbar/Navbar";
 import FooterSite from "@/components/Footer/FooterSite";
-
+import { EdgeStoreProvider } from '../lib/edgestore';
 
 export default function App({ Component, pageProps } : AppProps) {
 
   const persistor = persistStore(store)
 
   return (
+    <EdgeStoreProvider>
     <SessionProvider session={pageProps.session}>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
@@ -23,5 +24,6 @@ export default function App({ Component, pageProps } : AppProps) {
         </PersistGate>
       </Provider>
     </SessionProvider>
+    </EdgeStoreProvider>
   )
 }
